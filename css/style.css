@@ -1,0 +1,446 @@
+
+/* первичный цвет(мелкий шрифт в центре 1 стр, телефон вверху, должности, 2 стр мелкий шрифт) -  #757575 */
+/* вторичный цвет (навигация, заголовки, кнопки 2 стр. )   - #212121*/
+/* акцент - синие элементы-  #2196F3 */
+/* логотип (черная часть) -  #000000   */
+/* cекция Герой фон -  #2F303A  */
+/* - главный белый заголовок, кнопка замовити послугу, только! аддрес в футере - #FFFFFF */
+/* телефон и мыло в  футере -  rgba(255, 255, 255, 0.6)   */
+/* background-color  #F5F5F5 */
+:root {
+    --primary-background-color:#F5F5F5;
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+    --primary-black-color: #000000;
+    --secondary-text-background-color: #FFFFFF;
+    --phone-mail-color:rgba(255, 255, 255, 0.6); 
+    --secondary-background-color: #F5F4FA;
+    --heroy-background-color: #2F303A;
+    --heroy-button-color: #188CE8; /* цвет фона кнопки при ховере, фокусу и активе */
+  }
+  body {
+    background-color:var(--primary-background-color); 
+
+    color:var(--primary-text-color);    
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+}
+/* котнейрер */
+.container{
+  width: 1200px;
+  margin: 0 auto;
+  outline: 3px solid red;
+}
+.section-work h1{
+  display: none;
+}
+.section-benefits h2{
+  display: none;
+}
+.page-header .container{
+  display:flex;
+  align-items: center;
+}
+/* cекции */
+.section{
+padding-top: 94px;
+padding-bottom: 94px;
+}
+ /* цвет заголовков */
+.subtitle{
+  color:var(--primary-black-color);
+}
+/* Цвет фона шапки сайта */
+ .page-header {
+    background-color: var(--secondary-text-background-color);
+    
+  }
+/* Цвет и шрифт cсылок меню навигации */
+ .header-nav .link-nav{ 
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;  
+  /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+  background-color:green;
+  /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+  color:  var(--title-text-color);
+  
+  font-weight: 500; 
+  line-height: 1.14px;
+  letter-spacing: 0.02em;
+  text-decoration: none;  
+   
+}
+
+  .header-link +.header-link {
+  margin-left: 50px;
+}  
+  /* .header-link:last-child {
+   margin-right: 0;
+ }   */
+ .header-nav .link-nav:hover,.header-nav a:focus {
+  color: var(--accent-color);
+  
+ } 
+ .header-nav .link-nav.current{
+  color: var(--accent-color);
+ } 
+   
+
+ /* Цвет и шрифт cсылок телефон и почта */ 
+ .contacts a{ 
+  color: var(--primary-text-color);
+
+  font-style: 400;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+ }
+ /* сброс точек со списков */
+ .contacts{list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0; 
+  
+ }
+
+ .contacts-link +.contacts-link {
+  margin-left: 50px;}
+  
+
+ .header-nav{list-style: none;
+  display:flex;
+  margin: 0; 
+  padding: 0;
+ }
+ .items-benefits{
+  list-style: none;
+  display: flex;
+  margin:0; 
+  padding: 0; 
+ }
+ .items-images{
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+ }
+
+
+.img-employees
+{display: block;}
+
+.li-employees+.li-employees{
+margin-left: 30px;
+}
+/* .li-employees .subtitle{
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+} */
+
+ .link-images+.link-images {
+  margin-left: 30px;}
+
+ .items-employees{list-style: none;
+  margin: 0;
+ padding-left  : 0; 
+  display: flex;
+ }
+ .items-address{list-style: none;
+  margin: 0;
+  padding: 0;
+ }
+ .items-works{list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 0;
+  /* margin: -15px -15px; */
+ }
+  .li-works{
+  /* margin: 15px 15px; */
+  flex-basis: calc((100% - 60px) / 3);
+ } 
+ 
+ .items-buttons{
+  list-style: none;
+  display: flex;
+  justify-content:center ;
+  margin-bottom: 50px; 
+  
+
+  /* min-width: 73px;
+   */
+  }
+ 
+  
+.li-button+.li-button+{
+  margin-left: 8px;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  margin-right: 344px;
+}
+/* xoвер, фокус - телефон и почта */ 
+ .contacts a:hover, .contacts a :focus  {
+ color: var(--accent-color);
+}
+
+  /* цвет и шрифт логотипа в шапке -правая часть */
+  .logo-header{
+    color:var(--primary-black-color);
+
+    font-family: Raleway, sans-serif;     
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+  }
+  .footer .logo-link{
+    display: inline-block;
+    margin-bottom: 20px;
+
+    margin-right: 0;
+  }
+   /* цвет и шрифт логотипа - левая часть */
+  .logo-link{
+
+    margin-right: 93px;
+    color:var(--accent-color);
+
+
+    font-family: Raleway, sans-serif; 
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+  }
+   /* Цвет фона и текста секции  Герой */
+   .section-heroy {
+    text-align: center;
+    background-color: var(--heroy-background-color);
+    color:var(--secondary-text-background-color);
+  }
+  .section-heroy h1 { 
+    /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+    background-color:green;
+    /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+    display: block; 
+    margin-right: auto;
+    margin-left: auto;
+    width: 696px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+
+  }
+  /* кнопка Герой */
+  .button-heroy {
+    /* display: block; */
+    border-radius: 4px;
+    padding: 10px 32px;
+    min-width: 216px;  
+    border: 1px solid transparent;
+    /* margin-right: auto;
+    margin-left: auto; */
+
+    background-color:var(--accent-color);
+    color:var(--secondary-text-background-color);
+    
+    font-family: inherit; 
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88; 
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+  }
+  .button-heroy:hover,.button-heroy:focus,.button-heroy:active{
+    background-color:var(--heroy-button-color);
+  }
+ /* шрифты заголовки секция преимущества */
+ .subtitle{
+    /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+    background-color:green;
+    /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+  margin:0;
+  
+  font-weight: 700;
+  font-size:  14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+ }
+ .items-benefits .subtitle{
+   
+  margin-bottom: 10px;
+  
+  
+ } 
+ .items-works .subtitle{
+ margin-bottom: 20px;
+ }
+/* шрифты текст секция преимущества */
+ .subtitle-p { 
+   /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+   background-color:yellow;
+   /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+   display: block;
+ 
+  line-height: 1.7;
+ }
+  .jobtitle{
+    text-align: center;
+ } 
+ /*  ???????????????????????????????????????????????????? */
+.link-benefits{
+  margin-right: 30px;} 
+  /* ???????????????????????????????????????????????????? */
+ /* шрифты заголовок работы */
+ .section-images  .subtitle {
+  margin-bottom: 50px; 
+  /* margin-top: 30px; */
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+ }
+  /* шрифты заголовок команда */
+ .section-employees > .subtitle{
+  
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  justify-content: center;
+  text-align: center;
+ }
+/* шрифты заголовок член команды */
+ .items-employees .subtitle {
+  
+  margin-top: 30px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+ }
+ /* .li-employees p{
+  align-items: center;
+  justify-content: center;
+ } */
+ .items-works img {
+  margin-bottom: 20px;
+ }
+ 
+ /* шрифты текст член команды */
+ .items-employees p{ 
+/* font-weight: 400; */
+font-size: 16px;
+line-height: 1.19
+ }
+
+/*  - кнопки, секция работы */
+.button-work  {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 6px 22px;
+  min-width: 73px;  
+  border: 1px solid transparent;
+
+  background-color: var(--secondary-background-color);
+  color: var(--title-text-color);
+
+  font-family: inherit; 
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6; 
+}
+  .button-work:hover, .button-work:focus, .button-work:active {
+    background-color: var(--accent-color);
+    color:var(--secondary-text-background-color);
+  }
+  /* шрифты заголовок работы */
+.items-works .subtitle{ 
+    margin-left: 24px;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+  /* шрифты текст работы */
+.items-works p{  
+    margin-left: 24px;  
+
+    font-size: 16px;
+    line-height: 1.88;
+}
+ /* Цвет фона Футера */
+ .footer{ 
+  background-color: var(--heroy-background-color);
+}
+/* .footer .container {
+  
+  
+   padding-top: 252px;
+  align-self: center;
+} */
+.phone {
+  display: inline-block;
+  /* margin-bottom: 60px; */
+}
+ .mail {
+  display: inline-block;;
+  margin-bottom: 9px;
+} 
+  /* цвет и шрифт тел и эл. почты в футере */
+  .link-mailphone {  
+    color: var(--phone-mail-color);
+  
+    font-style: normal;
+    /* font-weight: 400; */
+    line-height: 1.71;
+    text-decoration: none;
+  }
+  /* xoвер, фокус  тел и эл. почты в футере */
+  .link-mailphone:hover, .link-mailphone :focus {
+    color: var(--accent-color);
+   }
+  /* цвет и шрифт адреса в футере */
+  .link-town{
+    display: inline-block;
+    margin-bottom: 9px;
+
+
+
+
+    color: var(--secondary-text-background-color);
+
+    /* font-weight: 400; */
+    font-style: normal;
+    line-height: 1.71;
+    text-decoration: none;
+  }
+  /* xoвер, фокус адрес в футере */
+  .link-town:hover, .link-town:focus{
+    color: var(--accent-color);
+  }
+   /* цвет и шрифт логотипа в футере  - правая часть!!!*/
+  .logo-footer{
+    color: var(--secondary-background-color);
+
+    font-family: Raleway, sans-serif;  
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+  }
