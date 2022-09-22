@@ -317,8 +317,8 @@ margin-left: 30px;
   text-align: center;
  }
   /* шрифты заголовок команда */
- .section-employees > .subtitle{
-  
+ .section-employees  .subtitle{
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
@@ -329,6 +329,7 @@ margin-left: 30px;
  .items-employees .subtitle {
   
   margin-top: 30px;
+  margin-bottom: 0 ;
   text-align: center;
   font-weight: 500;
   font-size: 16px;
