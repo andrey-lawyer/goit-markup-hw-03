@@ -31,7 +31,7 @@
 .container{
   width: 1200px;
   margin: 0 auto;
-  outline: 3px solid red;
+                                                   /* outline: 3px solid red; */
 }
 .section-work h1{
   display: none;
@@ -63,7 +63,7 @@ padding-bottom: 94px;
   padding-top: 32px;
   padding-bottom: 32px;  
   /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-  background-color:green;
+                                           /* background-color:green; */
   /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
   color:  var(--title-text-color);
   
@@ -229,7 +229,7 @@ margin-left: 30px;
   }
   .section-heroy h1 { 
     /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-    background-color:green;
+                                                      /* background-color:green; */
     /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
     display: block; 
     margin-right: auto;
@@ -252,7 +252,7 @@ margin-left: 30px;
     border-radius: 4px;
     padding: 10px 32px;
     min-width: 216px;  
-    border: 1px solid transparent;
+                                /* border: 1px solid transparent; */
     /* margin-right: auto;
     margin-left: auto; */
 
@@ -273,7 +273,7 @@ margin-left: 30px;
  /* шрифты заголовки секция преимущества */
  .subtitle{
     /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-    background-color:green;
+                                                  /* background-color:green; */
     /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
   margin:0;
   
@@ -294,7 +294,7 @@ margin-left: 30px;
 /* шрифты текст секция преимущества */
  .subtitle-p { 
    /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-   background-color:yellow;
+                                          /* background-color:yellow; */
    /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
    display: block;
  
@@ -390,8 +390,7 @@ line-height: 1.19
   background-color: var(--heroy-background-color);
 }
 /* .footer .container {
-  
-  
+
    padding-top: 252px;
   align-self: center;
 } */
