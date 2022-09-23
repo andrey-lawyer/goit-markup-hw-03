@@ -134,7 +134,10 @@ padding-bottom: 94px;
 
 
 .img-employees
-{display: block;}
+{display: block;
+
+  max-width: 100%;
+  height: auto;}
 
 .li-employees+.li-employees{
 margin-left: 30px;
@@ -149,6 +152,7 @@ margin-left: 30px;
   margin-left: 30px;}
 
  .items-employees{list-style: none;
+ 
   margin: 0;
  padding-left  : 0; 
   display: flex;
@@ -167,8 +171,13 @@ margin-left: 30px;
  }
   .li-works{
   /* margin: 15px 15px; */
-  flex-basis: calc((100% - 90px) / 3);
+  flex-basis: calc((100% - 60px) / 3);
  } 
+ .items-works img{
+  display: block;
+  max-width: 100%;
+  height: auto; 
+ }
  
  .items-buttons{
   gap: 8px;
@@ -343,6 +352,7 @@ margin-left: 30px;
   text-align: center;
  }
  .subtitle-jobtitle{
+  background-color: var(--secondary-text-background-color);
   padding-top: 30px;
   padding-bottom: 30px;
  }
@@ -352,6 +362,7 @@ margin-left: 30px;
 /* шрифты заголовок член команды */
  .items-employees .subtitle {
   
+
   margin-top: 0;
   margin-bottom: 10px;
   text-align: center;
@@ -417,6 +428,9 @@ line-height: 1.19
   padding-right: 24px;
   padding-top:   20px;
   padding-bottom: 20px;
+  border-left: 1px solid #EEEEEE;
+  border-right: 1px solid #EEEEEE;
+  border-bottom:1px solid #EEEEEE;
 }
  /* Цвет фона Футера */
  .footer{ 
